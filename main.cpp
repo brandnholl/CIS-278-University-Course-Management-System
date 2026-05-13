@@ -1,4 +1,4 @@
-// main.cpp – University Course Management System
+// main.cpp - University Course Management System
 #include <iostream>
 #include <map>
 #include <deque>
@@ -103,7 +103,11 @@ void addCourse() {
     string title = getInput("Title");
     string instr = getInput("Instructor");
     string capStr = getInput("Capacity [30]");
-    int cap = capStr.empty() ? 30 : stoi(capStr);
+    int cap = 30;
+    if (!capStr.empty()) {
+        try { cap = stoi(capStr); }
+        catch (...) { cout << "  Invalid number, using 30.\n"; cap = 30; }
+    }
     if (courses.count(code)) { cout << "  Code already exists.\n"; return; }
     courses[code] = Course(code, title, instr, cap);
     addLog("ADD course " + code + " - " + title);
@@ -127,7 +131,10 @@ void updateCourse() {
     courses[code].title      = getInput("New Title");
     courses[code].instructor = getInput("New Instructor");
     string capStr = getInput("New Capacity [" + to_string(courses[code].capacity) + "]");
-    if (!capStr.empty()) courses[code].capacity = stoi(capStr);
+    if (!capStr.empty()) {
+        try { courses[code].capacity = stoi(capStr); }
+        catch (...) { cout << "  Invalid number, capacity unchanged.\n"; }
+    }
     addLog("UPDATE course " + code);
     cout << "  Updated.\n";
 }

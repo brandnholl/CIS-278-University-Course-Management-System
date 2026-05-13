@@ -1,0 +1,266 @@
+==============================
+  Course Management System
+==============================
+
+=== Main Menu ===
+  1. Student Management
+  2. Course Management
+  3. Enrollment
+  4. Admin Tools
+  5. Save
+  6. Load
+  0. Exit
+  Choice:   Loaded 6 students, 5 courses.
+
+=== Main Menu ===
+  1. Student Management
+  2. Course Management
+  3. Enrollment
+  4. Admin Tools
+  5. Save
+  6. Load
+  0. Exit
+  Choice: 
+-- Student Management --
+  1. Add
+  2. Remove
+  3. Update
+  4. View
+  5. List all
+  6. Search
+  0. Back
+  Choice: 
+  ID   : S001
+  Name : Alice Johnson
+  Courses: CS101 MATH101 
+
+  ID   : S002
+  Name : Bob Williams
+  Courses: CS101 CS201 
+
+  ID   : S003
+  Name : Carol Brown
+  Courses: CS201 ENG101 
+
+  ID   : S004
+  Name : David Wilson
+  Courses: MATH101 
+
+  ID   : S005
+  Name : Eva Garcia
+  Courses: ENG101 PHY101 
+
+  ID   : S006
+  Name : Frank Miller
+  Courses: CS101 
+
+-- Student Management --
+  1. Add
+  2. Remove
+  3. Update
+  4. View
+  5. List all
+  6. Search
+  0. Back
+  Choice: 
+=== Main Menu ===
+  1. Student Management
+  2. Course Management
+  3. Enrollment
+  4. Admin Tools
+  5. Save
+  6. Load
+  0. Exit
+  Choice: 
+-- Course Management --
+  1. Add
+  2. Remove
+  3. Update
+  4. View
+  5. List all
+  6. Search
+  0. Back
+  Choice: 
+  Code       : CS101
+  Title      : Intro to Programming
+  Instructor : Dr. Smith
+  Enrolled   : 3 / 3
+  Waitlist   : 0
+  Students   : S001 S002 S006 
+
+  Code       : CS201
+  Title      : Data Structures
+  Instructor : Prof. Jones
+  Enrolled   : 2 / 3
+  Waitlist   : 0
+  Students   : S002 S003 
+
+  Code       : ENG101
+  Title      : English Writing
+  Instructor : Prof. Lee
+  Enrolled   : 2 / 30
+  Waitlist   : 0
+  Students   : S003 S005 
+
+  Code       : MATH101
+  Title      : Calculus I
+  Instructor : Dr. White
+  Enrolled   : 2 / 30
+  Waitlist   : 0
+  Students   : S001 S004 
+
+  Code       : PHY101
+  Title      : Physics I
+  Instructor : Dr. Brown
+  Enrolled   : 1 / 2
+  Waitlist   : 0
+  Students   : S005 
+
+-- Course Management --
+  1. Add
+  2. Remove
+  3. Update
+  4. View
+  5. List all
+  6. Search
+  0. Back
+  Choice: 
+=== Main Menu ===
+  1. Student Management
+  2. Course Management
+  3. Enrollment
+  4. Admin Tools
+  5. Save
+  6. Load
+  0. Exit
+  Choice: 
+-- Enrollment --
+  1. Enroll student
+  2. Drop student
+  0. Back
+  Choice:   Student ID:   Course Code:   Course full. Added to waitlist.
+
+-- Enrollment --
+  1. Enroll student
+  2. Drop student
+  0. Back
+  Choice: 
+=== Main Menu ===
+  1. Student Management
+  2. Course Management
+  3. Enrollment
+  4. Admin Tools
+  5. Save
+  6. Load
+  0. Exit
+  Choice: 
+-- Admin Tools --
+  1. Courses for a student
+  2. Students in a course
+  3. Activity log
+  0. Back
+  Choice: 
+  Activity Log:
+  LOAD from CSV
+  WAITLIST S004 -> CS101
+
+-- Admin Tools --
+  1. Courses for a student
+  2. Students in a course
+  3. Activity log
+  0. Back
+  Choice: 
+=== Main Menu ===
+  1. Student Management
+  2. Course Management
+  3. Enrollment
+  4. Admin Tools
+  5. Save
+  6. Load
+  0. Exit
+  Choice: 
+-- Enrollment --
+  1. Enroll student
+  2. Drop student
+  0. Back
+  Choice:   Student ID:   Course Code:   Dropped.
+  S004 promoted from waitlist.
+
+-- Enrollment --
+  1. Enroll student
+  2. Drop student
+  0. Back
+  Choice: 
+=== Main Menu ===
+  1. Student Management
+  2. Course Management
+  3. Enrollment
+  4. Admin Tools
+  5. Save
+  6. Load
+  0. Exit
+  Choice: 
+-- Admin Tools --
+  1. Courses for a student
+  2. Students in a course
+  3. Activity log
+  0. Back
+  Choice:   Course Code: 
+  Students in Intro to Programming:
+  S002 - Bob Williams
+  S004 - David Wilson
+  S006 - Frank Miller
+
+-- Admin Tools --
+  1. Courses for a student
+  2. Students in a course
+  3. Activity log
+  0. Back
+  Choice: 
+=== Main Menu ===
+  1. Student Management
+  2. Course Management
+  3. Enrollment
+  4. Admin Tools
+  5. Save
+  6. Load
+  0. Exit
+  Choice: 
+-- Student Management --
+  1. Add
+  2. Remove
+  3. Update
+  4. View
+  5. List all
+  6. Search
+  0. Back
+  Choice:   Name keyword:   S002 - Bob Williams
+
+-- Student Management --
+  1. Add
+  2. Remove
+  3. Update
+  4. View
+  5. List all
+  6. Search
+  0. Back
+  Choice: 
+=== Main Menu ===
+  1. Student Management
+  2. Course Management
+  3. Enrollment
+  4. Admin Tools
+  5. Save
+  6. Load
+  0. Exit
+  Choice:   Saved to students.csv and courses.csv
+
+=== Main Menu ===
+  1. Student Management
+  2. Course Management
+  3. Enrollment
+  4. Admin Tools
+  5. Save
+  6. Load
+  0. Exit
+  Choice: Goodbye!
