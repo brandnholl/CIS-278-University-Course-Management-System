@@ -196,7 +196,26 @@ void dropStudent() {
     string code = getInput("Course Code");
     if (!students.count(sid))               { cout << "  Student not found.\n";      return; }
     if (!courses.count(code))               { cout << "  Course not found.\n";       return; }
-    if (!students[sid].courses.count(code)) { cout << "  Not enrolled here.\n";      return; }
+    
+    
+    if (!students[sid].courses.count(code)) { 
+        queue<string> rebuilt;
+        bool found = false;
+        while (!courses[code].waitlist.empty()) {
+            string front = courses[code].waitlist.front();
+            courses[code].waitlist.pop();
+            if (front == sid) { found = true; }
+            else { rebuilt.push(front); }
+        }
+        courses[code].waitlist = rebuilt;
+        if (found) {
+            addLog("REMOVE WAITLIST " + sid + " from " + code);
+            cout << " Removed from waitlist.\n";
+        } else {
+            cout << " Not enrolled or waitlisted here.\n";
+        }
+        return;
+    }
 
     students[sid].courses.erase(code);
     courses[code].students.erase(sid);
