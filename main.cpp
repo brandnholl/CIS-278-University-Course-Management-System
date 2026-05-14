@@ -130,9 +130,19 @@ void updateCourse() {
     if (!courses.count(code)) { cout << "  Not found.\n"; return; }
     courses[code].title      = getInput("New Title");
     courses[code].instructor = getInput("New Instructor");
+    
+    
     string capStr = getInput("New Capacity [" + to_string(courses[code].capacity) + "]");
     if (!capStr.empty()) {
-        try { courses[code].capacity = stoi(capStr); }
+        try { 
+            int newCap = stoi(capStr);
+            if (newCap < (int)courses[code].students.size()) {
+                cout << " Cannot set capacity below current enrollment (" 
+                     << courses[code].students.size() << " enrolled). Unchanged.\n";
+            } else {
+                courses[code].capacity = newCap;
+            }
+        }
         catch (...) { cout << "  Invalid number, capacity unchanged.\n"; }
     }
     addLog("UPDATE course " + code);
